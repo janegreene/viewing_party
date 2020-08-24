@@ -20,6 +20,7 @@ gem 'omniauth'
 gem 'figaro'
 gem 'faraday'
 gem 'json'
+gem 'google-api-client'
 
 group :development, :test do
   gem 'pry'
