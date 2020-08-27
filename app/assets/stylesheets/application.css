@@ -32,5 +32,67 @@ footer {
 
 div.party {
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  width: 70%;
+  padding: 12px 20px;
+  margin: 20px;
+  color: #009973;
+}
+
+h1 {
+  margin-top: 5%;
+  font-size: 24;
+  text-shadow: 1px 1px #afbdd6;
+}
+h2 {
+  margin-top: 1%;
+  font-size: 14;
+  text-shadow: 1px 1px #afbdd6;
+}
+h4 {
+  margin-top: 1%;
+  font-size: 10;
+  text-shadow: 1px 1px #afbdd6;
+  padding: 0px 0px 0px 15px;
+}
+
+input {
+  font-size: 16px;
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #e6fff9;
+  color: #083a6b;
+}
+
+input[type="submit"] {
+  background: #00cc99;
+  color: #000;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px #000;
+  text-shadow:none;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
+}
+
+body {
+  height: 100%;
+  width: 90%;
+  margin: 20;
+  padding: 10;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  background: rgb(248,173,157);
+  background: linear-gradient(90deg, rgba(204, 255, 255,0.3909090909090909) 0%, rgba(0, 128, 128,0.925) 100%);
 }

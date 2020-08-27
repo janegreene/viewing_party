@@ -4,7 +4,7 @@
 <%= render partial: '/partials/flash' %>
 <br>
 <section class='friends'>
-  <p>Friends</p>
+  <h1>Friends</h1>
   <hr>
   <% if current_user.friends.empty?  %>
     <p>You currently have no friends.</p>
@@ -23,11 +23,11 @@
 </section>
 <br>
 <section class='viewing-parties'>
-  <p>Viewing Parties</p>
+  <h1>Viewing Parties</h1>
   <% if !current_user.view_parties.empty? %>
     <% current_user.view_parties.each do |party| %>
       <div class='party'>
-        <%= party.title %>
+        <h2> <%= party.title %> </h2>
         <br>
         <%= party.date %> at <%= party.time %>
         <br>
@@ -38,13 +38,13 @@
       </div>
     <% end %>
   <% end %>
-  <br>
   <% if !current_user.party_guests.empty? %>
+    <h4> Parties you are invited to: </h4>
     <% current_user.party_guests.each do |party| %>
       <div class='party'>
       <%= button_to 'Add to Calendar', "/events?party_id=#{party.id}" %>
         <br>
-        <%= party.view_party.title %>
+        <h2><%= party.view_party.title %></h2>
         <br>
         <%= party.view_party.date %> at <%= party.view_party.time %>
         <br>
