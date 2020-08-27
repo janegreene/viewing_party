@@ -38,8 +38,8 @@
       </div>
     <% end %>
   <% end %>
-  <br>
   <% if !current_user.party_guests.empty? %>
+    <h4> Parties you are invited to: </h4>
     <% current_user.party_guests.each do |party| %>
       <div class='party'>
       <%= button_to 'Add to Calendar', "/events?party_id=#{party.id}" %>
